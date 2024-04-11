@@ -12,13 +12,13 @@ button{
 }
 
 input, textarea{
-    background-color: #6385b8;
+    background-color: rgb(42, 134, 99);
     border: 2px solid rgb(93, 248, 151) ;
     
 }
 
 ::placeholder{
-    color: rgb(93, 248, 151);
+    color: whitesmoke;
 }
 
 

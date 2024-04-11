@@ -1,6 +1,6 @@
 import { style } from '@angular/animations';
 import { Component } from '@angular/core';
-import * as CryptoJS from 'crypto-js'
+import * as CryptoJS from 'crypto-js'   //Librería de Hash MD5
 
 
 
@@ -22,8 +22,8 @@ export class MainPageComponent {
   
 
 
-
-  onTransform(){
+//Botón Convertir 
+  onTransform(){    
     const codeNFC = document.getElementById('codigo_nfc') as HTMLInputElement
     this.valueNFC = codeNFC.value
     this.codeHashed = CryptoJS.MD5(this.valueNFC).toString()
@@ -36,6 +36,7 @@ export class MainPageComponent {
     this.logText += `NFC:  ${this.valueNFC}   -   Hash:   ${this.codeHashed}\n`
   }
 
+  //Barra de búsqueda 
   searchQuery(){
     
       const codeQuery = document.getElementById('code_query') as HTMLInputElement
@@ -44,6 +45,7 @@ export class MainPageComponent {
     
   }
 
+  //Botón Limpiar 
   onClear(){
     this.codeHashed = ''
     this.resetValue = ''
