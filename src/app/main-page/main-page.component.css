@@ -1,6 +1,5 @@
 .login-container{
     display: block;
-    background-color: #0f223e;
 }
 
 button{
@@ -21,7 +20,9 @@ input, textarea{
     color: whitesmoke;
 }
 
-
+div{
+    background-color: #0f223e
+}
 
 
 

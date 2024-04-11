@@ -1,7 +1,7 @@
 import { style } from '@angular/animations';
 import { Component } from '@angular/core';
 import * as CryptoJS from 'crypto-js'   //Librería de Hash MD5
-
+import { NFCData } from './nfc-data.interface';
 
 
 @Component({
@@ -14,11 +14,10 @@ export class MainPageComponent {
   valueNFC: string = ''
   codeHashed = ''
   logText: string = ''
-
   valueQuery: string = ''
   valueHashed: string = ''
-
   resetValue = ''
+  dataArray: NFCData[] = []
   
 
 
@@ -29,7 +28,8 @@ export class MainPageComponent {
     this.codeHashed = CryptoJS.MD5(this.valueNFC).toString()
     
     this.addToLog(this.codeHashed)
-
+    this.dataArray.push({ nfcCode: this.valueNFC, hash: this.codeHashed })
+    
   }
 
   addToLog(text: string) {
