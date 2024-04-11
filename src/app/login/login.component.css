@@ -1,0 +1,16 @@
+.login-container{
+    display: block;
+    background-color: #0f223e;
+}
+
+.white-text{
+   color: white !important;
+}
+
+.mat-mdc-card, button{
+
+    border: 2px solid #ffffff !important;
+    border-radius: 30px !important;
+    color: white;
+}
+

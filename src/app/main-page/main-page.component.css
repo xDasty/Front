@@ -1,0 +1,27 @@
+.login-container{
+    display: block;
+    background-color: #0f223e;
+}
+
+button{
+
+    border: 2px solid rgb(93, 248, 151) !important;
+    border-radius: 30px !important;
+    color: white;
+    
+}
+
+input, textarea{
+    background-color: #6385b8;
+    border: 2px solid rgb(93, 248, 151) ;
+    
+}
+
+::placeholder{
+    color: rgb(93, 248, 151);
+}
+
+
+
+
+

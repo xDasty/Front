@@ -1,0 +1,64 @@
+<div class="login-container flex justify-center items-center h-screen white-text">
+    
+   <a href="https://bracelit.es/">
+    <img src="../../assets/favicon.png" alt="Bracelit" 
+    class="mx-auto w-40">
+   </a>
+    
+   <div class="mx-80 flex justify-center items-center mt-20">
+    <mat-card class="login-container">
+        <mat-card-title>
+            <p class="py-4 px-20 text-2xl font-bold">Login</p>
+        </mat-card-title>
+        <mat-card-content>
+            <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+                <p class="py-4">
+                  <mat-form-field>
+                    <input 
+                    type="text" 
+                    matInput 
+                    placeholder="E-mail" 
+                    formControlName="email" 
+                    required 
+                    name="email"
+                    autocomplete="on"
+                    >
+                  </mat-form-field>
+                </p>
+              
+                <p>
+                  <mat-form-field>
+                    <input 
+                    type="password" 
+                    matInput 
+                    placeholder="Contraseña" 
+                    formControlName="password" 
+                    required
+                    >
+                  </mat-form-field>
+                </p>
+              
+                <div class="button py-10 pl-8">
+                  <button 
+                  type="submit" 
+                  mat-stroked-button 
+                  style="color: white;"
+                  >Iniciar sesión</button>
+                </div>
+              </form>
+              
+        </mat-card-content>
+    </mat-card>
+   </div>
+</div>
+
+
+<!--POST https://test.bracelit.es/api/v1/login
+Payload:{
+"email": "...@bracelit.es",
+"password": "1234"
+
+
+
+rest client plugin
+}-->
