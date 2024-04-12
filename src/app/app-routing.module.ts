@@ -16,7 +16,7 @@ const routes: Routes = [
   {
     path: 'main',
     component: MainPageComponent,
-    canActivate: [AuthGuard]
+    //canActivate: [AuthGuard]
     
   }
 

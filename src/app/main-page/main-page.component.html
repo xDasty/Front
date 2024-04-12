@@ -24,14 +24,14 @@
         
         <!--Botones-->
         <div>
-            <button type="button" (click)="onTransform()" class="px-4 py-2 bg-green-700 hover:bg-green-600 rounded-md text-white focus:outline-none">Convertir</button>
+            <button type="button" (click)="fadeIn() ; onTransform()" class="px-4 py-2 bg-green-700 hover:bg-green-600 rounded-md text-white focus:outline-none">Convertir</button>
         </div>
         <div>
             <button type="button" (click)="onClear()" class="px-4 py-2 bg-red-700 hover:bg-red-600 rounded-md text-white focus:outline-none">Limpiar</button>
         </div>
     </div>
     
-    <div class="mt-8 w-full max-w-md mx-auto">
+    <div class="mt-8 w-full max-w-md mx-auto" *ngIf="isShown" @fadeIn >
         <table class="w-full border-collapse">
           <thead>
             <tr>
