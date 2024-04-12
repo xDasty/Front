@@ -50,6 +50,7 @@ export class MainPageComponent {
     this.resetValue = ''
   }
 
+  //Animacion
   fadeIn(): void{
     this.isShown = true
   }
