@@ -3,14 +3,14 @@
     background-color: #0f223e;
 }
 
-.white-text{
-   color: white !important;
-}
-
 .mat-mdc-card, button{
 
-    border: 2px solid #ffffff !important;
+    border: 2px solid rgb(54, 172, 133) !important;
     border-radius: 30px !important;
     color: white;
+}
+
+hr{
+    border: solid 1px rgb(54, 172, 133) !important;
 }
 
